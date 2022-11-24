@@ -1,0 +1,11 @@
+{
+  "available_filters": [
+    {
+      "filter_name": "Animal",
+      "available_filter_values": [
+        "Moth",
+        "Grub"
+      ]
+    }
+  ]
+}
