@@ -4,7 +4,9 @@
   <h2>This page's filters:</h2>
   <ul>
   {{ range .Params.filters }}
-    <li> {{ . }} </li>
+    <li> 
+        {{ .filter_section }}: {{ .selected_value }}
+    </li>
   {{ end }}
   </ul>
 
