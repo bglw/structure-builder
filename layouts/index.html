@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <h2>This page's filters:</h2>
+  <ul>
+  {{ range .Params.filters }}
+    <li> {{ . }} </li>
+  {{ end }}
+  </ul>
+
+  <h2>All Available Filters:</h2>
+  <ul>
+  {{ range site.Data.filters.filters }}
+    <li> 
+        {{ .filter_name }}
+        <ul>
+        {{ range .available_filter_values }}
+            <li>{{ . }}</li>
+        {{ end }}
+        </ul>
+    </li>
+  {{ end }}
+  </ul>
+{{ end }}
