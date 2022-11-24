@@ -6,6 +6,14 @@
         "Moth",
         "Grub"
       ]
+    },
+    {
+      "filter_name": "Flavour",
+      "available_filter_values": [
+        "Chocolate",
+        "Raspberry",
+        "Lemon"
+      ]
     }
   ]
 }
