@@ -3,6 +3,8 @@ const filters = require("./data/filters.json");
 module.exports = {
     _structures: {
         filters: {
+            // Identify each structure variant based on its filter_section value
+            id_key: "filter_section",
             // Create a structure value for each filter section in our data file
             values: filters.available_filters.map(({ filter_name, available_filter_values }) => {
                 return {
@@ -12,8 +14,6 @@ module.exports = {
                         filter_section: filter_name,
                         selected_value: null
                     },
-                    // Identify this structure based on the filter_section value
-                    id_key: "filter_section",
                     subtext_key: "selected_value",
                     _inputs: {
                         filter_section: {
